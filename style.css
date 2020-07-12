@@ -1,0 +1,428 @@
+/* reglas
+selectores
+declaraciones
+propiedades
+valores */
+/* selector de etiqueta header - section - article - nav */
+/* selector descendente para acceder a la ancla */
+/* body header div nav ol li a {
+} */
+/*selectores: class y id, muchos elementos pueden recibir los mismos estilos con clases pero no con id */
+/* selector de clases . se hace con un puntito adelante (.profile) */
+/* selectores de id # se hace con un hastags adelante (#profile) */
+
+body {
+    font-family: 'Source Sans Pro', sans-serif;
+    margin:0px;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6{
+    font-family: 'Fjalla One', sans-serif;
+    font-weight: normal; /*=> peso de fuente */
+    /* font-style: italic; => estilo cursiva */
+}
+
+h1{
+    font-size: 40px;
+    line-height: 2em; /*=> alto de linea */
+    letter-spacing: -.2px; /* separacion de letras */
+    color: white;
+    margin: 0;
+    /* text-transform: uppercase;
+    text-decoration: dashed; */
+}
+
+h1 strong{
+    color: #026fff;    
+}
+
+h2{
+    color: #026fff;
+    text-transform: uppercase;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: bold;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+nav {
+    font-family: 'Fjalla One',sans-serif;
+}
+
+
+figure{
+    margin:0;
+    align-self: center ;
+}
+
+ol,
+ul{
+    margin:0;
+    padding: 0;
+    list-style: none;
+    
+}
+
+.container{
+    max-width: 1000px;    
+    flex: 1;
+    height: inherit;
+    display: inherit;
+    justify-content: inherit;
+    align-items: inherit;
+    margin: 0 auto;
+    flex-wrap: inherit;
+}
+
+.profile {
+    height: 300px;
+    background-color: #1b2127;  
+    display: flex;    
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.profile-img{
+    object-fit: cover;
+}
+
+.proyect {
+     background-color: #f4fbff;
+     border: 1px solid gray;
+     border-radius: 10px;
+     margin: 10px;
+     margin-bottom: 15px;
+     padding: 20px;
+     display: flex;
+     align-items: center;
+     justify-content: space-around;
+     flex-wrap: wrap;
+}
+
+.proyect-details {
+    width: 50%;
+}
+
+.proyect-image{
+    width: 100%;
+}
+
+.proyect-imageContainer{
+    width: 50%;
+}
+
+.proyect-title{
+    font-size: 30px;
+    margin-top: 0;
+    margin-bottom: 10px ;
+}
+
+.proyect-course{
+    margin: 0;
+}
+
+
+.header {
+    background-color: #1b2127;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    height: 70px;
+    flex-wrap: wrap;
+}
+
+.header a {
+    color: white;
+    text-decoration: none;
+    height: inherit;
+    display: flex;
+    align-items: center;
+    padding: 0 10px;
+}
+
+.header ol{
+    display: flex;
+    height: inherit;
+}
+
+.header ol li {
+    height: inherit;
+}
+
+.menu {
+    height: inherit;
+}
+
+.rank{
+    background: #fafafa;
+    padding: 20px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+
+.logo{
+    align-self: center;
+    display: flex;
+}
+
+.status {
+    margin: 1%;
+    width: 48%;
+    border-radius: 10px;
+    flex-shrink: 0;
+    overflow: hidden;
+    background: #f4fbff;
+}
+
+.status-title{
+    margin: 10px;
+    font-size: initial;
+}
+
+.status-list{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.status-details{
+    margin: 20px 60px;
+    margin-top: -40px;
+    background-color:white ;
+    position: relative;
+    padding: 5px;
+    text-align: center;
+    border-radius: 10px;
+    border: 1px solid black;
+}
+
+.status img{
+    width: 100%;
+    height: 250px;
+}
+
+.contact {
+    background-color: #056fff;
+    color: white;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.contact a{
+    color: white;
+}
+
+.contact-url{
+    margin-right: 30px;
+}
+
+.social {
+    margin-left: 30px;
+}
+
+.social-link {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    margin: 10px;
+}
+.social-link.facebook{
+    background-image: url('./images/logo-facebook.svg');
+    background-size: 50px 50px;
+}
+.social-link.instagram{
+    background-image: url('./images/instagram.svg');
+    background-size: 50px 50px;
+}
+.social-link.steam{
+    background-image: url('./images/steam.svg');
+    background-size: 50px 50px;
+}
+
+.contact-form-title {
+    margin:5px 0px;
+    align-content: center;
+    justify-content: center;
+    display: flex;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: bold;
+}
+
+.form-email input{
+    border-color: gray;
+    border-radius: 20px;
+    border-style: solid;
+    padding: 5px 20px 5px 30px;
+    background-image: url('./images/evelope.svg');
+    background-repeat: no-repeat;
+    background-size: 20px 20px;
+    background-position-y: center;
+    background-position-x: 5px;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: bold;
+    
+}
+
+.form-email button{
+    display: block;
+    margin-top: 10px;
+    background: transparent;
+    color: white;
+    width: 100px;
+    margin: 10px auto;
+    border-radius: 20px;
+    border-color: white;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: bold;
+}
+
+.footer{
+    background-color: #1b2127;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.footer a{
+    color: white;
+}
+
+.footer img{
+    vertical-align: middle;
+}
+
+
+/* Desktop firts empeza desde el MQ mas grande */
+
+
+
+@media screen and (max-width: 1024px){
+
+    .container{
+        padding: 0 1em;
+    }
+    
+    .profile{
+        height: auto;
+        position: relative;
+        overflow: hidden;
+        padding: 2em;
+    }
+
+    .profile h1{
+        font-size: 3em;
+        z-index: 2;
+        line-height: 2em;
+        background: rgba(0, 0, 0, 0.4);
+    }
+
+    .profile-img{
+        position: absolute;
+        z-index: 1;
+        top:0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        width: 100%;
+        height: 100%;
+    }
+}
+
+@media screen and (max-width: 767px){
+
+    h1{
+        font-size: 2em;
+    }
+
+    .header{
+        display: block;
+        height: auto;
+    }
+    .header ol{
+        display: block;
+    }
+    .header ol li{
+        height: 50px;
+        display: block;
+    }
+    .header a{
+        justify-content: center;
+    }
+    .header .logo{
+        flex-direction: column;
+    }
+
+    .proyect{
+        display: block;
+    }
+    .proyect-imageContainer img{
+        max-width:100%;
+    }
+
+    .proyect-imageContainer{
+       width : auto;
+       text-align: center;
+    }
+    .proyect-details{
+        width: auto;
+        text-align: center;
+        font-size: 18px;
+    }
+    .proyect-title{
+        font-size: 1em;
+    }
+    .proyect-course{
+        font-size: .8em;
+    }
+    .proyect-divition{
+        font-size: .7em;
+    }
+
+    .status{
+        width: auto;
+        flex-shrink: initial;
+        flex: auto;
+    }
+    
+}
+
+@media screen and (max-width: 480px){    
+
+    h1{
+        font-size: 1.5em;
+    }
+
+    .proyect-details{
+        width: auto;
+        text-align: center;
+        font-size: 12px;
+        }
+
+    .contact{
+        height: auto;
+        padding: 1em 0;
+        text-align: center;
+        display: block;
+    }
+
+    .footer{
+        text-align: center;
+        display: block;
+        border: 1px solid transparent;
+    }
+    
+}
+
+@media screen and (max-width: 320px){
+    h1{
+        font-size: 1.5em;
+    }
+}
