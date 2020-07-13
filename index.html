@@ -9,6 +9,7 @@
     <title>Furygow Profile</title>
 </head>
 <body>
+    <i class="icon-menu burger-button" id="burger-button"></i>
     <header class="header">
         <div class="container">
             <figure class="logo">
@@ -27,7 +28,7 @@
                         <a class="link" href="#rank">Rank</a>
                     </li>
                     <li>
-                        <a class="link" href="#status">Status</a>
+                        <a class="link" href="#status-list">Status</a>
                     </li>
                     <li>
                         <a class="link" href="#contact">Contact</a>
@@ -88,7 +89,7 @@
     <div class="container" id="status">
         <h2 class="status-title">Status</h2>
     </div>    
-    <section  class="status-list">   
+    <section  class="status-list" id="status-list">   
         <div class="container">
             <article class="status">                       
                 <figure class="status-imageContainer">
@@ -152,5 +153,27 @@
             </div>
         </div>        
     </footer>
+    <script>
+        const menu = document.querySelector('.menu'); 
+        const buguerButton = document.querySelector('#burger-button');
+        const ipad = window.matchMedia('screen and (max-width: 767px)'); 
+        ipad.addListener(validation);
+        function validation(event){
+            if(event.matches){
+                buguerButton.addEventListener('click',hideShow);
+            }else{
+                buguerButton.removeEventListener('click',hideShow);
+            }
+        }
+        validation(ipad);
+
+        function hideShow(){
+            if(menu.classList.contains('is-active')){
+                menu.classList.remove('is-active');
+            }else{
+                menu.classList.add('is-active');
+            }
+        }
+    </script>
 </body>
 </html>
